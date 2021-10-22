@@ -32,7 +32,7 @@ for(let user of users){
 }
 
 
-// get all the todos of the user
+// get all the todos of the user based on the id they entered
 const allUsersTodo = todos.filter(todo => {
     return todo.userId === Number(userIdInput)
 })

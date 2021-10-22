@@ -57,7 +57,7 @@ if(Number(userTodoInput) === 1){
 }
 // if user wants to add a new todos==================================================
 else if(Number(userTodoInput) === 2){
-    const newTodo = prompt('Please add your new todo..');
+    const newTodo = prompt('Please add your new todo(type sth please)..');
 
     const newTodoObj = {
         id: allInfo[1]["title"].length + 1,
@@ -71,7 +71,7 @@ else if(Number(userTodoInput) === 2){
     allInfo[0]["allUserToDo"].push(newTodoObj);
     console.log(`New list of todo title \n :${allInfo[1]["title"]}`)
 }
-// if user wants to updateone of its todos===========================================
+// if user wants to update one of its todos===========================================
 else if(Number(userTodoInput) === 3){
     const showtodos = allUsersTodo.map(el=> {
         return `${el.id} : ${el["title"]} \n`
